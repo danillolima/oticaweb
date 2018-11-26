@@ -65,7 +65,7 @@ class IndexController extends ControllerBase
         // Redirect to the local base URI*/
           // Getting a response instance
           $response = new Response();
-       return  $response->redirect('/oficinaII/');
+       return  $response->redirect('http://127.0.0.1:9287/oficinaII/');
     }
 
     private function _registerSession($user)

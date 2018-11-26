@@ -11,9 +11,13 @@ class UsuarioController extends ControllerBase
     }
 
     public function indexAction(){
-        
+        $this->view->setTemplateBefore('common');
+        $this->view->setTemplateAfter('funcionarios');
     }
     public function cadastroAction(){
         $this->view->title = "Cadastrar Usuários - Ótica Ótimo";
+    }
+    public function configAction(){
+        $this->view->title = "Configurações do usuário - Ótica Ótimo";
     }
 }
